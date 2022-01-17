@@ -1,0 +1,436 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{76A425DE-7142-4B5D-A146-B44BFF19415E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>aims.My.MyApplication</StartupObject>
+    <RootNamespace>aims</RootNamespace>
+    <AssemblyName>aims</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\MOOPER\Desktop\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>3</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>aims.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>aims.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>CEF3999AD258E44023987368FEF559A8A4F563FA</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>aims_ClaveTemporal.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>logo_gYP_icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmListadoArticulos.Designer.vb">
+      <DependentUpon>frmListadoArticulos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmListadoArticulos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mdlConexion.vb" />
+    <Compile Include="frmContactanos.Designer.vb">
+      <DependentUpon>frmContactanos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmContactanos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEditar.Designer.vb">
+      <DependentUpon>frmEditar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmEditar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInicio.Designer.vb">
+      <DependentUpon>frmInicio.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmInicio.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTienda.Designer.vb">
+      <DependentUpon>frmTienda.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTienda.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProductos.Designer.vb">
+      <DependentUpon>frmProductos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmProductos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUsuarios.Designer.vb">
+      <DependentUpon>frmUsuarios.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmUsuarios.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTestimonios.Designer.vb">
+      <DependentUpon>frmTestimonios.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTestimonios.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRegistros.Designer.vb">
+      <DependentUpon>frmRegistros.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmRegistros.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHome.Designer.vb">
+      <DependentUpon>frmHome.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmHome.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInicioSesion.Designer.vb">
+      <DependentUpon>frmInicioSesion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmInicioSesion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAgregarProductos.Designer.vb">
+      <DependentUpon>frmAgregarProductos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAgregarProductos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEliminarOnOffProductos.Designer.vb">
+      <DependentUpon>frmEliminarOnOffProductos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmEliminarOnOffProductos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEditarProductos.Designer.vb">
+      <DependentUpon>frmEditarProductos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmEditarProductos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAgregarUsuarios.Designer.vb">
+      <DependentUpon>frmAgregarUsuarios.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAgregarUsuarios.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEditarEliminarUsuarios.Designer.vb">
+      <DependentUpon>frmEditarEliminarUsuarios.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmEditarEliminarUsuarios.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRegistrarse.Designer.vb">
+      <DependentUpon>frmRegistrarse.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmRegistrarse.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVer.Designer.vb">
+      <DependentUpon>frmVer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmVer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mdlFunciones.vb" />
+    <Compile Include="mdlLenguaje.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="frmContactanos.resx">
+      <DependentUpon>frmContactanos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEditar.resx">
+      <DependentUpon>frmEditar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInicio.resx">
+      <DependentUpon>frmInicio.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmListadoArticulos.resx">
+      <DependentUpon>frmListadoArticulos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTienda.resx">
+      <DependentUpon>frmTienda.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProductos.resx">
+      <DependentUpon>frmProductos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUsuarios.resx">
+      <DependentUpon>frmUsuarios.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTestimonios.resx">
+      <DependentUpon>frmTestimonios.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRegistros.resx">
+      <DependentUpon>frmRegistros.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHome.resx">
+      <DependentUpon>frmHome.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInicioSesion.resx">
+      <DependentUpon>frmInicioSesion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAgregarProductos.resx">
+      <DependentUpon>frmAgregarProductos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEliminarOnOffProductos.resx">
+      <DependentUpon>frmEliminarOnOffProductos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEditarProductos.resx">
+      <DependentUpon>frmEditarProductos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAgregarUsuarios.resx">
+      <DependentUpon>frmAgregarUsuarios.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEditarEliminarUsuarios.resx">
+      <DependentUpon>frmEditarEliminarUsuarios.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRegistrarse.resx">
+      <DependentUpon>frmRegistrarse.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVer.resx">
+      <DependentUpon>frmVer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="aims_ClaveTemporal.pfx" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\DataSources\aims.My.MyApplication.datasource" />
+    <None Include="My Project\DataSources\aims.My.MySettings.datasource" />
+    <None Include="My Project\DataSources\f001.datasource" />
+    <None Include="My Project\DataSources\f002.datasource" />
+    <None Include="My Project\DataSources\f003.datasource" />
+    <None Include="My Project\DataSources\f004.datasource" />
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-calculator-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-chevron-right-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-erase-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-exit-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-login-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-new-copy-30 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-return-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-tick-box-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-login-301.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-upload-to-cloud-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-send-file-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-synchronize-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-add-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-login-302.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-send-file-30 %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-erase-30 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-close-window-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-close-window-30 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-close-window-30 %281%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-close-window-30 %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\c11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flat-style-circle-turn-on-off_icon-icons.com_66943 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Login_37128.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3592827-access-general-house-key-key-lock-key-login-office_107758.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pro_4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 y x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="media\pro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-user-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-right-128.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-down-arrow-200.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cargando.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="logo_Fha_icon.ico" />
+    <Content Include="logo_gYP_icon.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
